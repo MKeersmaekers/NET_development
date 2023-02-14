@@ -1,0 +1,15 @@
+C:\TM\WPF\2021\Intro\Intro\Intro\bin\Debug\Intro.exe.config
+C:\TM\WPF\2021\Intro\Intro\Intro\bin\Debug\Intro.exe
+C:\TM\WPF\2021\Intro\Intro\Intro\bin\Debug\Intro.pdb
+C:\TM\WPF\2021\Intro\Intro\Intro\obj\Debug\Intro.csprojAssemblyReference.cache
+C:\TM\WPF\2021\Intro\Intro\Intro\obj\Debug\Intro.csproj.CoreCompileInputs.cache
+C:\TM\WPF\2021\Intro\Intro\Intro\obj\Debug\Intro.exe
+C:\TM\WPF\2021\Intro\Intro\Intro\obj\Debug\Intro.pdb
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\.NET development\Intro\Intro\bin\Debug\Intro.exe.config
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\.NET development\Intro\Intro\bin\Debug\Intro.exe
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\.NET development\Intro\Intro\bin\Debug\Intro.pdb
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\.NET development\Intro\Intro\obj\Debug\Intro.csproj.AssemblyReference.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\.NET development\Intro\Intro\obj\Debug\Intro.csproj.SuggestedBindingRedirects.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\.NET development\Intro\Intro\obj\Debug\Intro.csproj.CoreCompileInputs.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\.NET development\Intro\Intro\obj\Debug\Intro.exe
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\.NET development\Intro\Intro\obj\Debug\Intro.pdb
