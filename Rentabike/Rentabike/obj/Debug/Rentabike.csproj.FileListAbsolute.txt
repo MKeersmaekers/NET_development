@@ -1,0 +1,11 @@
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\bin\Debug\Rentabike.exe.config
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\bin\Debug\Rentabike.exe
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\bin\Debug\Rentabike.pdb
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\obj\Debug\Rentabike.csproj.AssemblyReference.cache
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\obj\Debug\Rentabike.csproj.SuggestedBindingRedirects.cache
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\obj\Debug\Rentabike.Form1.resources
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\obj\Debug\Rentabike.Properties.Resources.resources
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\obj\Debug\Rentabike.csproj.GenerateResource.cache
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\obj\Debug\Rentabike.csproj.CoreCompileInputs.cache
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\obj\Debug\Rentabike.exe
+C:\Users\keers\Documents\Thomasmore_2022-2023\NET_development\Rentabike\Rentabike\obj\Debug\Rentabike.pdb
