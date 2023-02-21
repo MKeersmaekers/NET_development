@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+    ViewData["Title"] = "Menu";
+}
+
+<style>
+    .hero-image {
+        width: 100%;
+    }
+
+    .center-images {
+        text-align: center;
+        margin: auto;
+    }
+
+    .no-style {
+        list-style-type: none;
+    }
+</style>
+
+<div>
+    @if ((int)ViewData["BannerNr"] == 1) {
+        <img class="hero-image" src="~/images/banners/banner1.jpg"/>
+    } else if ((int)ViewData["BannerNr"] == 2) {
+    <img class="hero-image" src="~/images/banners/banner2.jpg" />
+    } else if ((int)ViewData["BannerNr"] == 3) {
+        <img class="hero-image" src="~/images/banners/banner3.jpg"/>
+    } else
+    {
+        <img class="hero-image" src="~/images/banners/banner4.jpg"/>
+    }
+</div>
+
+<ul class="no-style">
+    <div class="center-images">
+    <li>
+        <a asp-controller="Info" asp-action="ListRaces"><img src="~/images/banners/races.png" /></a>
+    </li>
+    <li>
+        <a asp-controller="Info" asp-action="ListTeams"><img src="~/images/banners/teams.png" /></a>
+    </li>
+    </div>
+    <div class="center-images">
+    <li>
+        <a asp-controller="Info" asp-action="ListRiders"><img src="~/images/banners/riders.png" /></a>
+    </li>
+    <li>
+        <a asp-controller="Shop" asp-action="OrderTicket"><img src="~/images/banners/tickets.png" /></a>
+    </li>
+    </div>
+</ul>
