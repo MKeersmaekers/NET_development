@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MotoGP.Models.Rider>
+
+@{
+    ViewData["Title"] = "Rider";
+}
+
+<table>
+    @foreach (Rider rider in Model)
+    {
+    <td><img src="~/images/riders/@(rider.RiderID).jpg" /></td>
+    <td><img src="~/images/flags/@(rider.CountryID).jpg" /></td>
+    <td>@rider.RiderID</td>
+    <td>@rider.FirstName @rider.LastName</td>
+    <br />
+    }
+</table>

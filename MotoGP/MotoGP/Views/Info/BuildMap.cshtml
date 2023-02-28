@@ -1,11 +1,12 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<Race>
+
 @{
 }
 
 <img src="~/images/banners/map.png" alt="Map" usemap="#map"/>
 
-<map name="map">
-    <area shape="circle" coords=""/>
+<map name="map" id="map">
+    @foreach (Race race in Model){
+    <area shape="circle" coords="@race.X, @race.Y, 10" href=""/>
+    }
 </map>

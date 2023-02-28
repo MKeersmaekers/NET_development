@@ -1,9 +1,17 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<MotoGP.Models.Race>
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Races";
+}
+
+@foreach (Race race in Model)
+{
+    <h1>@race.Date.ToString("MMMM")</h1>
+    <table>
+        <tr>
+            <td>@(Html.DisplayFor(modelItem => race.Date)) <a asp-controller="Info" asp-action="ShowRace" asp-route-id="@race.RaceID">@race.Name</a></td>
+        </tr>
+    </table>
 }
 
 <div>

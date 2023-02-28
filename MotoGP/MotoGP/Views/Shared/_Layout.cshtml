@@ -36,7 +36,7 @@
         <h1>@banners[(int)ViewData["BannerNr"]].Substring(6, banners[(int)ViewData["BannerNr"]].Length - 10)</h1>
     } else if ((int)ViewData["BannerNr"] == 1) 
     {
-        <h1>Order @banners[(int)ViewData["BannerNr"]].Substring(6, banners[(int)ViewData["BannerNr"]].Length - 10)</h1>
+        <h1>@banners[(int)ViewData["BannerNr"]].Substring(6, banners[(int)ViewData["BannerNr"]].Length - 10)</h1>
     }
     else if ((int)ViewData["BannerNr"] == 2)
     {
