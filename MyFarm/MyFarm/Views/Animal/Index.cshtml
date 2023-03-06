@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Animals";
+}
+
+@model AnimalSearchViewModel
+    
+    <form asp-action="Index" method="get">
+        <label>
+            Name:
+        <input type="text" name="q" id="nameLabel" value="@Model.q" />
+        </label>
+        <input type="submit" value="Zoeken"/>
+    </form>
+
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Animals[0].Name)</th>
+            <th>@Html.DisplayNameFor(m => m.Animals[0].Type)</th>
+            <th>@Html.DisplayNameFor(m => m.Animals[0].Birthdate)</th>
+            <th>@Html.DisplayNameFor(m => m.Animals[0].Sex)</th>
+        </tr>
+    @foreach (Animal animal in Model.Animals)
+    {
+        <tr>
+            <td>@Html.DisplayFor(m => animal.Name)</td>
+            <td>@Html.DisplayFor(m => animal.Type)</td>
+            <td>@Html.DisplayFor(m => animal.Birthdate)</td>
+            <td>@Html.DisplayFor(m => animal.Sex)</td>
+        </tr>
+    }
+</table>

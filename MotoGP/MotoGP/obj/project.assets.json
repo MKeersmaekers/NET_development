@@ -2459,11 +2459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\keers\\Documents\\Thomasmore_2022-2023\\NET_development\\MotoGP\\MotoGP\\MotoGP.csproj",
+      "projectUniqueName": "C:\\Users\\keers\\OneDrive\\Documenten\\Thomas More 2022-2023\\NET_development\\MotoGP\\MotoGP\\MotoGP.csproj",
       "projectName": "MotoGP",
-      "projectPath": "C:\\Users\\keers\\Documents\\Thomasmore_2022-2023\\NET_development\\MotoGP\\MotoGP\\MotoGP.csproj",
+      "projectPath": "C:\\Users\\keers\\OneDrive\\Documenten\\Thomas More 2022-2023\\NET_development\\MotoGP\\MotoGP\\MotoGP.csproj",
       "packagesPath": "C:\\Users\\keers\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\keers\\Documents\\Thomasmore_2022-2023\\NET_development\\MotoGP\\MotoGP\\obj\\",
+      "outputPath": "C:\\Users\\keers\\OneDrive\\Documenten\\Thomas More 2022-2023\\NET_development\\MotoGP\\MotoGP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\keers\\AppData\\Roaming\\NuGet\\NuGet.Config",
