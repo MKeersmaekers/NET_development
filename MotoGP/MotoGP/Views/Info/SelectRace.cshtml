@@ -1,0 +1,12 @@
+﻿@model MotoGP.Models.ViewModels.SelectRaceViewModel
+@{
+}
+
+<form asp-controller="Info" asp-action="SelectRace">
+    <select asp-for="raceID" asp-items="Model.Races">
+        <option value="0">-- Select a race --</option>
+    </select>
+</form>
+
+
+<a asp-controller="Home" asp-action="Index">Back</a>

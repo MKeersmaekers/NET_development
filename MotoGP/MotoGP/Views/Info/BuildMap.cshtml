@@ -7,6 +7,6 @@
 
 <map name="map" id="map">
     @foreach (Race race in Model){
-    <area shape="circle" coords="@race.X, @race.Y, 10" href=""/>
+        <area shape="circle" coords="@race.X, @race.Y, 10" alt="@race.Name" href="@Url.Action("ShowRace", "Info", new { id = race.RaceID})"/>
     }
 </map>

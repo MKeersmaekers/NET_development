@@ -5,12 +5,12 @@
 }
 
 <table>
+
     @foreach (Rider rider in Model)
     {
-    <td><img src="~/images/riders/@(rider.RiderID).jpg" /></td>
-    <td><img src="~/images/flags/@(rider.CountryID).jpg" /></td>
-    <td>@rider.RiderID</td>
-    <td>@rider.FirstName @rider.LastName</td>
-    <br />
+    <tr><img src="~/images/riders/@(rider.RiderID).jpg" /></tr>
+    <tr><img src="~/images/flags/@(rider.CountryID).png" /></tr>
+    <tr>@rider.RiderID</tr>
+    <tr>@rider.FirstName @rider.LastName</tr>
     }
 </table>

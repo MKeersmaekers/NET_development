@@ -2,6 +2,8 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Order tickets";
+
+    var countries = (IEnumerable<SelectListItem>)ViewData["Countries"]!;
 }
 
 
@@ -9,11 +11,8 @@
     Please fill out following fields:
 </div>
 
-<form asp-action="ConfirmOrder">
-    <input type="hidden" asp-for="CountryID" value="1"/>
+<form asp-controller="Shop" asp-action="ConfirmOrder">
     <input type="hidden" asp-for="RaceID" value="1"/>
-    <input type="hidden" asp-for="Number" value="1"/>
-
 
     <label asp-for="Name">@Html.DisplayNameFor(model => model.Name)</label>
     <input asp-for="Name"/> <br />
@@ -23,6 +22,24 @@
 
     <label asp-for="Address">@Html.DisplayNameFor(model => model.Address)</label>
     <input asp-for="Address" /> <br />
+
+    <label asp-for="Address">@Html.DisplayNameFor(model => model.Country)</label>
+    <select asp-for="CountryID" asp-items="countries"></select> <br />
+
+    <label asp-for="Address">@Html.DisplayNameFor(model => model.Number)</label>
+    <label asp-for="Number">1</label>
+    <input asp-for="Number" type="radio" value="1"/>
+    <label asp-for="Number">2</label>
+    <input asp-for="Number" type="radio" value="2"/>
+    <label asp-for="Number">3</label>
+    <input asp-for="Number" type="radio" value="3"/>
+    <label asp-for="Number">4</label>
+    <input asp-for="Number" type="radio" value="4"/>
+    <label asp-for="Number">5</label>
+    <input asp-for="Number" type="radio" value="5"/>
+    <label asp-for="Number">6</label>
+    <input asp-for="Number" type="radio" value="6"/>
+    <br />
 
     <input type="submit" value="Order" />
 </form>

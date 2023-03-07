@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MotoGP.Data;
 using MotoGP.Models;
+using MotoGP.Models.ViewModels;
 using System.ComponentModel.DataAnnotations;
 
 namespace MotoGP.Controllers
@@ -29,15 +31,11 @@ namespace MotoGP.Controllers
 
         public IActionResult BuildMap()
         {
-            List<Race> races = new List<Race>();
-
-            races.Add(new Race() { RaceID = 1, X = 517, Y = 19, Name = "Assen" });
-            races.Add(new Race() { RaceID = 2, X = 859, Y = 249, Name = "Losail Circuit" });
-            races.Add(new Race() { RaceID = 3, X = 194, Y = 428, Name = "Autódromo Termas de Río Hondo" });
+            var races = _context.Races;
 
             ViewData["BannerNr"] = 0;
 
-            return View(races);
+            return View(races.ToList());
         }
 
         public IActionResult ShowRace(int id)
@@ -55,9 +53,29 @@ namespace MotoGP.Controllers
             ViewData["BannerNr"] = 1;
 
             var rider = _context.Riders
-                .Include(m => m.Country);
+                .Include(m => m.Country)
+                .OrderBy(m => m.RiderID);
 
             return View(rider);
+        }
+        public IActionResult SelectRace(int raceID = 0) 
+        {
+            var listRacesVM = new SelectRaceViewModel();
+
+            if (raceID != 0)
+            {
+                listRacesVM.showraces = _context.Races.Where(m => m.RaceID == raceID).OrderBy(m => m.RaceID).ToList();
+            } else
+            {
+                listRacesVM.showraces = _context.Races.OrderBy(m => m.RaceID).ToList();
+            }
+
+            listRacesVM.Races = 
+                new SelectList(_context.Races.OrderBy(n => n.Name), "RaceID", "Name");
+
+            ViewData["BannerNr"] = 1;
+
+            return View(listRacesVM); 
         }
     }
 }
