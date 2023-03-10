@@ -73,6 +73,8 @@ namespace MotoGP.Controllers
             listRacesVM.Races = 
                 new SelectList(_context.Races.OrderBy(n => n.Name), "RaceID", "Name");
 
+            listRacesVM.raceID = raceID;
+
             ViewData["BannerNr"] = 1;
 
             return View(listRacesVM); 

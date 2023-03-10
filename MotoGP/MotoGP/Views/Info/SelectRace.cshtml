@@ -1,12 +1,36 @@
 ﻿@model MotoGP.Models.ViewModels.SelectRaceViewModel
 @{
+    ViewData["Title"] = "Select Race";
 }
 
-<form asp-controller="Info" asp-action="SelectRace">
+<form asp-controller="Info" asp-action="SelectRace" method="get">
     <select asp-for="raceID" asp-items="Model.Races">
         <option value="0">-- Select a race --</option>
     </select>
+    <input type="submit" value="filter"/>
 </form>
+
+
+@foreach (var item in Model.showraces)
+{
+<h1>
+    @ViewData["Title"]
+    -
+    @Html.DisplayFor(modelItem => item.Name)
+</h1>
+
+<h2>
+    @Html.DisplayFor(modelItem => item.Date)
+    -
+    @Html.DisplayFor(modelItem => item.Country)
+</h2>
+
+<img src="~/images/races/@(item.RaceID).jpg" />
+
+<p>
+    @Html.DisplayFor(modelItem => item.Description)
+</p>
+}
 
 
 <a asp-controller="Home" asp-action="Index">Back</a>
