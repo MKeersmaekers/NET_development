@@ -1,0 +1,12 @@
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\bin\Debug\net6.0\SlagerLibrary.deps.json
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\bin\Debug\net6.0\SlagerLibrary.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\bin\Debug\net6.0\SlagerLibrary.pdb
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\obj\Debug\net6.0\SlagerLibrary.csproj.AssemblyReference.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\obj\Debug\net6.0\SlagerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\obj\Debug\net6.0\SlagerLibrary.AssemblyInfoInputs.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\obj\Debug\net6.0\SlagerLibrary.AssemblyInfo.cs
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\obj\Debug\net6.0\SlagerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\obj\Debug\net6.0\SlagerLibrary.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\obj\Debug\net6.0\refint\SlagerLibrary.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\obj\Debug\net6.0\SlagerLibrary.pdb
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\SlagerLibrary\SlagerLibrary\obj\Debug\net6.0\ref\SlagerLibrary.dll
