@@ -1,0 +1,10 @@
+﻿@model List<Auto>
+
+
+    <ul>
+@foreach (var auto in Model)
+{
+    <li>@auto.Nickname @auto.Merk.Name</li>
+    <a asp-action="delete" asp-controller="auto" asp-route-id="@auto.ID">Delete</a>
+}
+</ul>

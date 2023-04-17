@@ -1,0 +1,5 @@
+add-migration -Context AutoDbContext
+
+update-database -Context AutoDbContext
+
+deze commands gebruiken na models en dbcontext maken
