@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using MvcMovie.Data;
 using MvcMovie.Models;
 using MvcMovie.DAL;
+using Microsoft.EntityFrameworkCore;
 
 namespace MvcMovie.Controllers
 {
@@ -18,7 +19,7 @@ namespace MvcMovie.Controllers
         // GET: Ratings/List
         public IActionResult List()
         {
-            var ratings = _context.Ratings.OrderBy(r => r.Name);
+            var ratings = ratingRepository.GetAll().OrderBy(r => r.Name);
 
             return View(ratings.ToList());
         }
@@ -36,8 +37,8 @@ namespace MvcMovie.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(rating);
-                _context.SaveChanges();
+                ratingRepository.Insert(rating);
+                ratingRepository.Save();
                 return RedirectToAction("List");
             }
             return View(rating);
@@ -46,7 +47,7 @@ namespace MvcMovie.Controllers
         // GET: Ratings/Edit/5
         public IActionResult Edit(int id)
         {
-            var rating = _context.Ratings.SingleOrDefault(r => r.RatingID == id);
+            var rating = ratingRepository.GetAll().SingleOrDefault(r => r.RatingID == id);
 
             return View(rating);
         }
@@ -60,8 +61,8 @@ namespace MvcMovie.Controllers
             {
                 try
                 {
-                    _context.Update(rating);
-                    _context.SaveChanges();
+                    ratingRepository.Update(rating);
+                    ratingRepository.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -75,9 +76,9 @@ namespace MvcMovie.Controllers
         // GET: Ratings/Delete/5
         public IActionResult Delete(int id)
         {
-            var rating = _context.Ratings.SingleOrDefault(r => r.RatingID == id);
-            _context.Ratings.Remove(rating!);
-            _context.SaveChanges();
+            var rating = ratingRepository.GetAll().SingleOrDefault(r => r.RatingID == id);
+            ratingRepository.Delete(rating!);
+            ratingRepository.Save();
             return RedirectToAction("List");
         }
 

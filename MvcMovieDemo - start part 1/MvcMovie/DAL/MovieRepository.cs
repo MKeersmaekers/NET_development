@@ -1,4 +1,5 @@
-﻿using MvcMovie.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using MvcMovie.Data;
 using MvcMovie.Models;
 
 namespace MvcMovie.DAL
@@ -17,7 +18,9 @@ namespace MvcMovie.DAL
         }
         public Movie GetByID(int id)
         {
-            return _context.Movies.Find(id);
+            return _context.Movies
+                .Include(m => m.Rating)
+                .SingleOrDefault(m => m.MovieID == id);
         }
         public void Insert(Movie obj)
         {

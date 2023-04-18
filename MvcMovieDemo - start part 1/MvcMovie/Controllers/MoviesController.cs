@@ -24,15 +24,15 @@ namespace MvcMovie.Controllers
 
 			if (ratingID != 0)
 			{
-				listMoviesVM.Movies = _context.Movies.Where(m => m.RatingID == ratingID).OrderBy(m => m.Title).ToList();
+				listMoviesVM.Movies = movieRepository.GetAll().Where(m => m.RatingID == ratingID).OrderBy(m => m.Title).ToList();
 			}
 			else
 			{
-				listMoviesVM.Movies = _context.Movies.OrderBy(m => m.Title).ToList();
+				listMoviesVM.Movies = movieRepository.GetAll().OrderBy(m => m.Title).ToList();
 			}
 
 			listMoviesVM.Ratings =
-				new SelectList(_context.Ratings.OrderBy(r => r.Name),
+				new SelectList(ratingRepository.GetAll().OrderBy(r => r.Name),
 								"RatingID", "Name");
 			listMoviesVM.ratingID = ratingID;
 
@@ -41,9 +41,7 @@ namespace MvcMovie.Controllers
 
 		public IActionResult Details(int id)
 		{
-			var movie = _context.Movies
-							.Include(m => m.Rating)
-							.SingleOrDefault(m => m.MovieID == id);
+			var movie = movieRepository.GetByID(id);
 
 			return View(movie);
 		}
@@ -52,7 +50,7 @@ namespace MvcMovie.Controllers
 		public IActionResult Create()
 		{
 			ViewData["Ratings"] =
-				new SelectList(_context.Ratings.OrderBy(r => r.Name),
+				new SelectList(ratingRepository.GetAll().OrderBy(r => r.Name),
 							   "RatingID",
 							   "Name");
 

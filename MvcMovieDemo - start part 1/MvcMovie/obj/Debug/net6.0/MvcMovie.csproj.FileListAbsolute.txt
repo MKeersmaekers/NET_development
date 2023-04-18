@@ -134,3 +134,15 @@ C:\Data\.NET Development\WT\Design Patterns\Applications\MvcMovieDemo\MvcMovie\o
 C:\Data\.NET Development\WT\Design Patterns\Applications\MvcMovieDemo\MvcMovie\obj\Debug\net6.0\MvcMovie.pdb
 C:\Data\.NET Development\WT\Design Patterns\Applications\MvcMovieDemo\MvcMovie\obj\Debug\net6.0\MvcMovie.genruntimeconfig.cache
 C:\Data\.NET Development\WT\Design Patterns\Applications\MvcMovieDemo\MvcMovie\obj\Debug\net6.0\ref\MvcMovie.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.csproj.AssemblyReference.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.AssemblyInfoInputs.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.AssemblyInfo.cs
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.csproj.CoreCompileInputs.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.RazorAssemblyInfo.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.RazorAssemblyInfo.cs
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\refint\MvcMovie.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MvcMovieDemo - start part 1\MvcMovie\obj\Debug\net6.0\MvcMovie.pdb
