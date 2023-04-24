@@ -36,10 +36,10 @@ namespace MvcMovie.DAL
             _dbSet.Add(obj);
         }
 
-        public void Save()
-        {
-            _context.SaveChanges();
-        }
+        //public void Save()
+        //{
+        //    _context.SaveChanges();
+        //}
 
         public void Update(T obj)
         {

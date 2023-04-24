@@ -10,18 +10,18 @@ namespace MvcMovie.Controllers
 {
     public class RatingsController : Controller
     {
-        private IRepository<Rating> ratingRepository;
+        private IUnitOfWork _uow;
 
         public RatingsController(
-            IRepository<Rating> ratingRepository)
+            IUnitOfWork uow)
         {
-            this.ratingRepository = ratingRepository;    
+            _uow = uow;    
         }
 
         // GET: Ratings/List
         public IActionResult List()
         {
-            return View(ratingRepository.GetAll());
+            return View(_uow.RatingRepository.GetAll());
         }
 
         // GET: Ratings/Create
@@ -37,8 +37,8 @@ namespace MvcMovie.Controllers
         {
             if (ModelState.IsValid)
             {
-                ratingRepository.Insert(rating);
-                ratingRepository.Save();
+                _uow.RatingRepository.Insert(rating);
+                _uow.Save();
                 return RedirectToAction("List");
             }
             return View(rating);
@@ -47,7 +47,7 @@ namespace MvcMovie.Controllers
         // GET: Ratings/Edit/5
         public IActionResult Edit(int id)
         {
-            return View(ratingRepository.GetByID(id));
+            return View(_uow.RatingRepository.GetByID(id));
         }
 
         // POST: Ratings/Edit/5
@@ -59,8 +59,8 @@ namespace MvcMovie.Controllers
             {
                 try
                 {
-                    ratingRepository.Update(rating);
-                    ratingRepository.Save();
+                    _uow.RatingRepository.Update(rating);
+                    _uow.Save();
                 }
                 catch (DataException)
                 {
@@ -74,8 +74,8 @@ namespace MvcMovie.Controllers
         // GET: Ratings/Delete/5
         public IActionResult Delete(int id)
         {
-            ratingRepository.Delete(id);
-            ratingRepository.Save();
+            _uow.RatingRepository.Delete(id);
+            _uow.Save();
             return RedirectToAction("List");
         }
 

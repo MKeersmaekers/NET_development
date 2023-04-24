@@ -9,7 +9,7 @@ namespace MvcMovie.DAL
 		void Insert(T obj);
 		void Delete(int id);
 		void Update(T obj);
-		void Save();
+		//void Save();
         IEnumerable<T> Get(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,

@@ -10,15 +10,12 @@ namespace MvcMovie.Controllers
 {
 	public class MoviesController : Controller
 	{
-		private IRepository<Movie> movieRepository;
-		private IRepository<Rating> ratingRepository;
+		private IUnitOfWork _uow;
 
 		public MoviesController(
-			IRepository<Rating> ratingRepository,
-			IRepository<Movie> movieRepository)
+			IUnitOfWork uow)
 		{
-			this.movieRepository = movieRepository;
-			this.ratingRepository = ratingRepository;
+			_uow = uow;
 		}
 
 		public IActionResult List(int ratingID = 0)
@@ -27,18 +24,18 @@ namespace MvcMovie.Controllers
 
 			if (ratingID != 0)
 			{
-				listMoviesVM.Movies = movieRepository.GetAll()
+				listMoviesVM.Movies = _uow.MovieRepository.GetAll()
 					.Where(m => m.RatingID == ratingID)
 					.OrderBy(m => m.Title).ToList();
 			}
 			else
 			{
-				listMoviesVM.Movies = movieRepository.GetAll()
+				listMoviesVM.Movies = _uow.MovieRepository.GetAll()
 					.OrderBy(m => m.Title).ToList();
 			}
 
 			listMoviesVM.Ratings =
-				new SelectList(ratingRepository.GetAll().OrderBy(r => r.Name),
+				new SelectList(_uow.RatingRepository.GetAll().OrderBy(r => r.Name),
 								"RatingID", "Name");
 			listMoviesVM.ratingID = ratingID;
 
@@ -47,7 +44,7 @@ namespace MvcMovie.Controllers
 
 		public IActionResult Details(int id)
 		{
-			var movie = movieRepository.Get(
+			var movie = _uow.MovieRepository.Get(
 				filter: x => x.MovieID == id,
 				includes: x => x.Rating).FirstOrDefault();
 
@@ -58,7 +55,7 @@ namespace MvcMovie.Controllers
 		public IActionResult Create()
 		{
 			ViewData["Ratings"] =
-				new SelectList(ratingRepository.GetAll().OrderBy(r => r.Name),
+				new SelectList(_uow.RatingRepository.GetAll().OrderBy(r => r.Name),
 							   "RatingID",
 							   "Name");
 
