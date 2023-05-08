@@ -951,6 +951,30 @@
             "rid": "win"
           }
         }
+      },
+      "MyShop.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyShop.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyShop.Domain.dll": {}
+        }
+      },
+      "MyShop.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
+          "MyShop.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyShop.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyShop.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -2442,6 +2466,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MyShop.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MyShop.Domain/MyShop.Domain.csproj",
+      "msbuildProject": "../MyShop.Domain/MyShop.Domain.csproj"
+    },
+    "MyShop.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../MyShop.Infrastructure/MyShop.Infrastructure.csproj",
+      "msbuildProject": "../MyShop.Infrastructure/MyShop.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2450,7 +2484,8 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.11",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.11",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.11"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.11",
+      "MyShop.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2479,7 +2514,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\keers\\OneDrive\\Documenten\\Thomas More 2022-2023\\NET_development\\MyShop\\MyShop.Infrastructure\\MyShop.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\keers\\OneDrive\\Documenten\\Thomas More 2022-2023\\NET_development\\MyShop\\MyShop.Infrastructure\\MyShop.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

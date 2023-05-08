@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using MyShop.Infrastructure;
 using MyShop.Web.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -42,5 +43,11 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+
+using (var scope = app.Services.CreateScope())
+{
+    var shoppingContext = scope.ServiceProvider.GetRequiredService<ShoppingContext>();
+    DBInitializer.Initialize(shoppingContext);
+}
 
 app.Run();

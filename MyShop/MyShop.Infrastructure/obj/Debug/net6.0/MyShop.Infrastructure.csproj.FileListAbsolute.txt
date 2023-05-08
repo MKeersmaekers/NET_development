@@ -1,0 +1,17 @@
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\bin\Debug\net6.0\MyShop.Infrastructure.deps.json
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\bin\Debug\net6.0\MyShop.Infrastructure.runtimeconfig.json
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\bin\Debug\net6.0\MyShop.Infrastructure.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\bin\Debug\net6.0\MyShop.Infrastructure.pdb
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\bin\Debug\net6.0\MyShop.Domain.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\bin\Debug\net6.0\MyShop.Domain.pdb
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\MyShop.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\MyShop.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\MyShop.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\MyShop.Infrastructure.AssemblyInfo.cs
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\MyShop.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\MyShop.Infrastructure.csproj.CopyComplete
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\MyShop.Infrastructure.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\refint\MyShop.Infrastructure.dll
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\MyShop.Infrastructure.pdb
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\MyShop.Infrastructure.genruntimeconfig.cache
+C:\Users\keers\OneDrive\Documenten\Thomas More 2022-2023\NET_development\MyShop\MyShop.Infrastructure\obj\Debug\net6.0\ref\MyShop.Infrastructure.dll
